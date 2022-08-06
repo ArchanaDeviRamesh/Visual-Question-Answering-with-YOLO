@@ -4,15 +4,16 @@ Implementing Hierarchical Question-Image Co-Attention for Visual Question Answer
 * This work extends two enhancements to the existing Hierarchical Question-Image Co-Attention for Visual Question Answering [1]
 
   1) Image features extracted using CNN pre-trained on ImageNet(Xception) and with object features extracted from the YOLOV4 model pre-trained on MS COCO inspired by [2]
-  2) Expanding the training dataset using Back Translation text data augmentation method. 
+  2) Expanding the training dataset using Back Translation text data augmentation method (implemented only on the x_train data). 
  
  * Dataset used : VQA V2 (https://visualqa.org/download.html)
     1) In V2, train and validation dataset used with Split 1 means the training dataset will be used for both training and validation and the validation dataset will be used for testing (https://github.com/GT-Vision-Lab/VQA_LSTM_CNN)
  
  * code folder contains the code base for this work
     1) TrainSet.ipynb is used to create the train.csv file (training dataset). The same can be used to create val.csv (testing dataset). 
-    2) VQA_Attention_Hierarchical_YOLO.ipynb contains implementation of Hierarchical Question-Image Co-Attention with YOLO
-    3) VQA_Attention_Hierarchical_YOLO_BT.ipynb contains implementation of Hierarchical Question-Image Co-Attention with YOLO and Back Translation
+    2) VQA_Attention_Hierarchical_YOLO.ipynb contains the implementation of Hierarchical Question-Image Co-Attention with YOLO
+    3) VQA_Attention_Hierarchical_YOLO_BT.ipynb contains the implementation of Hierarchical Question-Image Co-Attention with YOLO and Back Translation
+    4) BackTranslation.ipynb contains the implementation of Back Translation creating x_train_da.csv and y_train_da.csv
     
  * data folder contains the csv files used for implementation.
     1) train.csv 
