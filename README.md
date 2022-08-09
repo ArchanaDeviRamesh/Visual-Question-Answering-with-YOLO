@@ -7,6 +7,8 @@ Implementing Hierarchical Question-Image Co-Attention for Visual Question Answer
 
   1) Image features extracted using CNN pre-trained on ImageNet(Xception) and with object features extracted from the YOLOV4 model pre-trained on MS COCO inspired by [2]
   2) Expanding the training dataset using Back Translation text data augmentation method (implemented only on the x_train data). 
+  
+  3) Libraries used: pandas, numpy, matplotlib, sklearn, nltk, keras, tensorflow, transformers, yolov4
  
  # Dataset used : VQA V2 (https://visualqa.org/download.html)
     1) In V2, train and validation dataset used with Split 1 means the training dataset will be used for both training and validation and the validation dataset will be used for testing (https://github.com/GT-Vision-Lab/VQA_LSTM_CNN)
